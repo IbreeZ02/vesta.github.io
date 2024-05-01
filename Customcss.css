@@ -1,0 +1,244 @@
+  *{
+   
+    margin: 0;
+    padding : 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  body {
+    background-color:rgb(235, 235, 235);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   /* background-image:url("longform-original-26167-1460745807-4.jpg") ;*/
+  }
+  header{
+    background-color: #37c1e3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 60px;
+}
+nav li{
+  float: right;
+  margin-right: 40px;
+}
+nav a{
+  padding: 7px;
+  border-radius:5px ;
+}
+nav a:hover{
+  background-color: black;
+  }
+  div.gallery {
+      margin: 40px;
+      border: 3px solid #ccc;
+      float: left;
+      width: 200px;
+    }
+    
+  div.gallery:hover {
+      border: 2px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 30px;
+      text-align: center;
+    }
+    #one{
+      font-size: 25px;
+      height: 60px;
+      padding-left: 10px;
+      padding: 15px 0;
+    } 
+p{
+  text-align: center;
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}   
+/*Here is my navigation bar on css */
+/*  nav{
+    background-color: rgb(151, 148, 129);
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+nav ul{
+    float: right;
+    margin-right:7px ;
+    padding: 20px;
+    background-color:  rgb(151, 150, 130);
+    overflow: hidden;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 0px;
+    margin:0 10px;
+    padding:0 30ox;
+}
+/*a.active,:hover{
+background-color: aqua;
+color: blue;
+transition: .5s;
+}
+li a:hover{
+  color: crimson;
+  background-color: beige;
+  transition: .5s;
+  padding:10px 5px;
+}
+li a{
+  color: black;
+  font-size: 17px;
+  display: block;
+  padding:5px 10px;
+
+/*text-transform: uppercase;*/
+}
+/*.checkbtn{
+  font-size: 35px;
+  color: black;
+  float: right;
+  line-height: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+display: none;
+}
+@media(max-width: 800px){
+  lable.logo {
+    font-size: 44px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 160px;
+
+  }
+}
+@media(max-width: 888px){
+  .checkbtn{
+  display: block;
+}
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: burlywood;
+  top: 80px;
+  left: 0;
+  text-align: center;
+}
+nav ul li {
+  display: block;
+}
+nav ul li a{
+  font-size: 20px;
+}
+a:hover,a.active{
+  background: none;
+  color: blueviolet;
+}
+}
+
+
+
+
+
+/*  **********from here starts the form css******** */
+*{
+  box-sizing: border-box;
+  dashed {border-style: dashed;}
+}
+input[type=text],textarea{
+width: 25%;
+padding:7PX 12px 7px 4px ;
+border-radius: 5px;
+border: 1px solid;
+resize: vertical;
+}
+label {
+  padding: 20px 20px 20px 0;
+  display: inline-block;
+}
+.container{
+  border-radius: 3px;
+  background-color:rgb(235, 235, 235);
+  padding:20px;
+}
+.lab{
+float: left;
+width: 25%;
+margin-top: 20px;
+}
+
+.txtar{
+float: left;
+width: 75%;
+padding: 5px 0;
+margin-top: 10px;
+}
+.forall::after {
+content: "";
+display: table;
+clear: both;
+}
+@media screen and (max-width:900px){
+  .lab, .txtar{
+    width: 100%;
+    margin-top: 0;
+  }
+}
+input[type=submit]{
+  background-color: rgb(214, 21, 21);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+  margin: 0;
+}
+input[type=submit]:hover{
+  background-color: rgb(199, 135, 196);
+}
+input[type=email],textarea{
+  width: 25%;
+  padding:7PX 12px 7px 4px ;
+  border-radius: 5px;
+  border: 1px solid;
+}  
+input[type=password],textarea{
+  width: 25%;
+  padding:7PX 12px 7px 4px ;
+  border-radius: 5px;
+  border: 1px solid;
+}
+input[type=textarea]{
+  font-size: 40px;
+}
+div.char {
+  margin: 3px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 170px;
+}
+
+div.char :hover {
+  border: 1px solid black;
+}
+div.char img {
+  width: 100%;
+  height: auto;
+
+}
+div.desc {
+  padding: 1px;
+  text-align: center;
+}

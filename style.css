@@ -1,0 +1,547 @@
+:root{
+    --primarycolor: #f1781b; 
+    --secondarycolor: #e38136;
+--lightcolor: white;
+--bgcolor-1: #430A5D;
+--bgcolor-2: blue;  
+--padding : 8%;
+}
+
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr) );
+}
+
+img {
+  grid-template-columns: repeat(auto-fill,minmax(200%,1fr) );
+}
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #430A5D;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #3e22bd;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #430A5D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(116, 34, 192, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #cc1717;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  background-color: aqua;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 70%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.social{
+  margin-top: 3.5rem; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+.social img {
+  margin-right: 1rem;
+  width: 2.5rem;
+  transition: 0.4s;
+}
+.social img:hover{
+  transform: scale(1.2);
+}
+
+
+
+footer {
+  padding: 2rem var(--padding);
+  background-color: var(--bgcolor-1);
+  }
+  
+  footer .content-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  footer .content-footer p {
+  color: var(--lightcolor);
+  text-align: center;
+  width: 500px;
+  margin: 1rem;
+  }
+  
+  footer .content-footer .end{
+      color: var(--primarycolor);
+      margin-top: 1rem;
+  }
+  
+  .hamburger {
+      display: none;
+      position: relative;
+      user-select: none;
+      appearance: none;
+      border: none;
+      outline: none;
+      background: none;
+      cursor: pointer;
+  }
+  
+  .hamburger span{
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background-color: var(--lightcolor);
+      border-radius: 6px;
+      transform: 0 0;
+      transition: 0.4s;
+  }
+  
+  /* ---------------------------------------- MEDIA QUERIES-------------------------------------------------*/
+@media screen and (max-width : 575px ){
+  :root{
+      --padding:1.5rem
+  }
+  html{
+      font-size: 15px;
+  }
+  footer .content-footer p {
+    width: 100%;
+}}
+
+/* ----------------------------------------COPY MEDIA -------------------------------------------------*/
+/* @media screen and (min-width : 576px) and (max-width:767px){
+  :root{
+      --padding:1.5rem
+  }
+  html{
+      font-size: 15px;
+  }
+footer .content-footer p {
+  width: 100%;
+}
+
+}
+
+/* ----------------------------------------MEDIA IPAD-------------------------------------------------*/
+/*@media screen and (min-width : 768px) and (max-width:991px){
+   :root{
+      --padding:1.5rem
+  }
+  html{
+      font-size: 15px;
+  }
+
+  footer .content-footer p {
+    width: 100%;
+} 
+
+} */
+
+
+/*---------------------------- New media query ---------------------------------------*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .example {background: red;}
+  .flip-card{
+    width: 460px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .example {background: green;}
+  .flip-card{
+   width: 560px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .example {background: blue;}
+  .flip-card{
+    width: 750px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {background: orange;}
+  .flip-card{
+    width: 960px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+  .flip-card{
+    width: 1194px
+  }
+}
+
+/*---------------------------- end here -----------------------------------------------*/
+
+
+  /* ---------------------------------------- TRAVEL -------------------------------------------------*/
+
+  .imgs {
+    margin-left: 40px;
+    margin-left: 82px;
+    margin-top: 25px;
+    background-color: brown;
+    border-radius: 50px;
+  }
+
+  .wafaa .h2{
+    background-color: #3e22bd;
+    color: white;
+    width: 88%;
+    padding: 15px;
+    margin-left: 79px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .grid_container{
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+  .grid_item{
+    display: grid;
+    row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+
+  .flip-card {
+    background-color: transparent;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin-left: 80px;
+    margin-top: 20px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .img_resp{
+    width: 100%;
+  }
+
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin: 10px 60px 10px;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+    display: grid;
+    
+    justify-content: space-between;
+    align-content: flex-start;
+    gap: 5rem;
+    background-color: #430A5D;
+
+  }
+  
+
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  .card h1 {
+    font-size: 30px;
+  }
+
+  .card-1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    background-color: #bbb;
+    margin: 10px 10px;
+    text-align: center;
+    padding: 10px;
+    font-family: arial;
+    font-size: 15px;
+
+  }
+  
+
+  .card-1 button:hover {
+    opacity: 0.7;
+  }
+
+  .card-1 h1 {
+    font-size: 30px;
+  }
+
+
+ 
+  
+  .card-2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    background-color: #bbb;
+    padding: 10px;
+    margin: 10px 0px 0px;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+ 
+  }
+  
+
+  .card-2 button:hover {
+    opacity: 0.7;
+  }
+
+  .card-2 h1 {
+    font-size: 26px;
+  }
+
+
+  
+  .card-3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    margin: 10px ;
+    background-color: #bbb;
+    padding: 10px;
+    text-align: center;
+    font-family: arial;
+    font-size: 15px;
+  }
+  
+
+  .card-3 button:hover {
+    opacity: 0.7;
+  }
+
+  .card-3 h1 {
+    font-size: 30px;
+  }

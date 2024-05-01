@@ -1,0 +1,109 @@
+header {
+    background-color: #e38137;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#one{
+    font-size: 20px;
+    padding-left: 10px;
+}
+nav li {
+    float: right;
+    margin-left: 20px;
+}
+nav a {
+    padding: 10px;
+    border-radius: 10px;
+}
+nav a:hover {
+    background-color: #ffffff;
+}
+
+iframe {
+    height: 350px;
+    width: 98%;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-width: 10px;
+    border-radius: 15;
+    border-color: #e38137;
+    border-style: groove;
+    border-bottom: 20px groove #e38137 ;
+    cursor: auto;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.spot {
+    display: flex;
+    font-size: 25px;
+    border-width: 5px;
+    border-color: #ffa25b;
+    border-style: solid;
+    background-color: #e381376f;
+}
+
+.spot img{
+    min-width: 350px;
+    border-color: #e38137;
+    border-style: solid;
+    border-radius: 100%;
+    border-width: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: auto;
+}
+
+.spot .title a {
+    width: 100px;
+    min-width: 50px;
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 20px;
+    border-bottom: 5px dashed  #553116fc ;
+    font-family:fantasy;
+    font-weight: 100;
+    
+    
+}
+
+.spot p{
+    margin-left: 10px;
+    min-width: 100px;
+    margin-bottom: 100px;
+}
+
+.page {
+    margin-left: 40%;
+}
+
+.page a{
+    text-decoration: none;
+    font-size: 20px;
+    min-width:60px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border-radius: 20%;
+}
+
+.page a:visited{
+    color: black;
+}
+
+.spot .title a:visited {
+    color: black;
+    
+
+}
+  
+.dark-mode {
+    background-color: #512402; /* Dark mode background color */
+    color: #ffffff; /* Dark mode text color */
+  }
+  
